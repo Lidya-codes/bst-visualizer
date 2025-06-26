@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+  position: relative;
+}
+
+.node {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  min-width: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.link {
+  position: absolute;
+  width: 2px;
+  background: #555;
+}
+
+.level {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.node-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tree-wrapper {
+  position: relative;
+}
+
+#svg-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.line {
+  stroke: #333;
+  stroke-width: 2;
+}
